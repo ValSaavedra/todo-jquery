@@ -1,0 +1,11 @@
+* {
+
+	font-family: 'Quicksand', sans-serif;
+}
+ 
+.logoApp {
+	font-family: 'Bree Serif', serif;
+}
+
+// tomar el valor de input (ingresa tarea) y hacer que pase al checkbock
+con append se meten clases dentro de las to-do 
