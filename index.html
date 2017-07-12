@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial.scale=1.0, maximum-scale=1.0,minimum scale=1.0">
-	<title>To-Do App</title>
-	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
-	  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+		<link rel="stylesheet" href="assets/css/main.css">
+	</head>
 <body>
-	<header class=container>
-	 <div class="row">
-	      <div class="col s12">
-	      	<span class="flow-text">To-Do List</span>
-	      </div>    <!-- caja logo -->
+	<header>
+		<div class="row">
+			<div class="col s12 red darken-2">
+				<h1 class="center-align">To-Do App</h1>
+			</div>
+		</div>
 	</header>
-	<section class=container> <!-- caja check -->
-	  <div class="row">
-		  <div class="col s6 offset-s6">
-		  	<div class="" alt="caja-check">
-		  		<form action="">
-					 <textarea id="to-do">Ingresa tu tarea</textarea>	 <label>To-Do items </label>
-					 	 <p>
-					      <input type="checkbox" id="test5" />
-					      <label for="test5">tarea </label>
-					    </p>
-					</form>		  		
-		  	</div> <!-- caja-->
-	  	</div> <!-- col -->
-	  </div> <!-- row -->
+	<section>
+	<div class="container">
+		<div class="row">
+	   	<div class="col offset-s4 s4">
+	    	<h3>To-Do list:</h3>
+	      	<form action="#">
+	        	<input type="text" placeholder="Agregar nueva tarea">
+	        		<button id="addBtn">Agregar</button>
+	      	</form>
+	      	<ul id="myList">
+	        	<li><input type="checkbox" class="check">
+	        		|<button class="rmvBtn">x</button>
+	        	</li>
+	        	<li class="done"><input type="checkbox" class="check" checked>
+	        		<button class="rmvBtn">x</button></li>
+	        	<li><input type="checkbox" class="check"><button class="rmvBtn">x</button></li>
+	      		</ul>
+	    	</div>
+	  	</div>
+		</div>
 	</section>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> <!-- jquery primero -->
-	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script> <!--  materialize 2° -->
-	<script src="assets/js/main.js"></script> <!-- JS ultimo -->
-
+	<script src="//code.jquery.com/jquery-3.1.0.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+	<script src="assets/js/main.js"></script>	
 </body>
 </html>

@@ -1,11 +1,30 @@
 * {
 
 	font-family: 'Quicksand', sans-serif;
-}
- 
-.logoApp {
-	font-family: 'Bree Serif', serif;
+	background-color: #ffab91;
 }
 
-// tomar el valor de input (ingresa tarea) y hacer que pase al checkbock
-con append se meten clases dentro de las to-do 
+
+header .container{
+	background-color: #d32f2f;
+	color: #FFF;
+}
+
+span .flow-text {
+	font-family: 'Bree Serif', serif;
+	font-size: 4em;
+	color: #FFF;
+}
+
+
+section .container{
+	background-color: #FF9F80;
+
+}
+
+.caja-check{
+	background-color: #A7DBD8;
+
+}
+/* tomar el valor de input (ingresa tarea) y hacer que pase al checkbock
+con append se meten clases dentro de las to-do */
