@@ -24,11 +24,13 @@
 	   		<h2 class="text-center">To Do List  <i class="material-icons">done</i></h2>
 			</div>
 		</div>
-		
+
 		<div class="row">
 			<div class="col offset-s2 s8">
-				<input type="text" id="task-input" placeholder="Add your task here">
-				<a class="waves-effect waves-light btn add-btn">Add to list</a>
+				<form action="#">
+					<input type="text" id="task-input" placeholder="Add your task here">
+					<a class="waves-effect waves-light btn" id="add-btn">Add to list</a>
+				</form>
 			</div>
 		</div>
 
@@ -36,35 +38,19 @@
 			<div class="col offset-s2 s8 l8 offset-l2">
 				My To-Do List:
 			</div>
-			<div class="col offset-s2 s8 l8 offset-l2" id="task">				
-			</div>
-
 		</div>
-		<div class="row">
-			<div class="col offset-s2 s8 l8 offset-l2">
-				Done tasks:
-			</div>
-			<div class="col offset-s2 s8 l8 offset-l2" id="done">
-
-
-
-
-	   	<!-- 
-	    	<h3>My To-Do List:</h3>
-				<form action="#">
-        		<input class="newTask" type="text" placeholder="Add your task here">
-        		<a class="waves-effect waves-light btn add-btn">Add to list</a>
-      		</form>
-	     		<ul id="myList">
-						<a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">delete</i></a>
-	        	<li><input type="checkbox" class="check"><a class="waves-effect waves-light btn"><i class="material-icons left"></i>It's Done!</a>
-  -->
-	      		
-	      		
-	  	</div>
-		</div>
+		<div class="col offset-s2 s8 l8 offset-l2 text-center" id="done">
+			<ul id="myList">
+		    <li><input type="checkbox" class="check"></li>
+		    <li class="done"><input type="checkbox" class="check" checked></li>
+		    <li><input type="checkbox" class="check"></li>
+	    </ul>
+	  </div>
 	</section>
-	<script src="//code.jquery.com/jquery-3.1.0.slim.min.js"></script>
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
 	<script src="assets/js/main.js"></script>	
 </body>

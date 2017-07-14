@@ -1,50 +1,30 @@
+var $input = $('#task-input'),
+    $btn = $('#add-btn'),
+    $ul = $('#myList'),
+    $removeTask = $('.delete');
 
- $(document).ready(function(){
-  var $addBoton = $('#add-btn');  
-    
-
-    $addBoton.on('click', function(e) {
+  $btn.on('click', function(e) {
     e.preventDefault();
     if ($input.val() == '') {
-      alert('Add new task');
+      alert('Add a new task');
     } else {
-
-          var crearTask = function(taskToAdd) {
-          var nuevoDiv = $('<div class="tarea-padre"></div>');
-          var nuevoCheckbox = $('<input type="checkbox" id="idtask- class="checkbox">');
-          var nuevoLabel = $('<label for="idtask- "></label>');
-          var removeButton = $('<a class="waves-effect waves-light btn right remove">Remove</a>');
-
-          nuevoDiv.append(nuevoCheckbox)
-          .append(nuevoLabel.html(taskToAdd))
-          .append(removeButton);
-
-          return nuevoDiv;
-        } 
-
-        var listItemToAdd = crearTask(tareaInput);
-        $("#task").append(listItemToAdd);
-      }
+      $ul.prepend('<li><input type="checkbox" class="check"> ' + $input.val() + ' <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons delete">delete</i></a></li>');
+      $input.val('');
     }
-    remove();
-    check();
   });
-  function remove(){
-    $('.remove').click(function(){
-      $(this).parent().remove();
-    })
+
+  function removeItem() {
+    $(this).closest('li').remove();
   }
-    
-  function check(){
-    $("#task").on( "click", "input.checkbox", function(){ 
-      var taskList = $(this).parent();
-      $("#done").append(listItem);
-    })
+
+  function markThis() {
+    if (this.checked) {
+      $(this).closest('li').addClass('done');
+    } else {
+      $(this).closest('li').removeClass('done');
+    }
   }
-  remove();
-  check();
 
+  $(document).on('click', '.check', markThis);
 
-
-
-
+  $(document).on('click', '.delete', removeItem);
